@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url(../fonts/Poppins-Medium.otf);
+}
+
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url(../fonts/Poppins-Regular.otf);
+}
+
 :root{
     --background: #fffdf7;
     --preto: #212121;
@@ -9,4 +19,14 @@
     --vermelho: #e74c3c;
     --verde: #2ecc71;
     --separate: #ccc;
+}
+
+body{
+    background-color: var(--background);
+}
+
+.nav-link{
+    color: var(--preto);
+    padding-left: 35px !important;
+    padding-right: 35px !important;
 }
