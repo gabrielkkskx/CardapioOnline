@@ -27,6 +27,10 @@ html, body{
     color: var(--txt);
 }
 
+.laranja{
+    color: var(--primaria);
+}
+
 b{
     background-color: var(--background);
     font-family: 'PoppinsMedium', 'Rubik', sans-serif;
