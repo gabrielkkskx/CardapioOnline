@@ -26,7 +26,7 @@ html, body{
 }
 
 .nav-link{
-    color: var(--branco) !important;
+    color: var(--preto) !important;
     padding-left: 35px !important;
     padding-right: 35px !important;
 }
