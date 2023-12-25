@@ -21,7 +21,7 @@
     --separate: #ccc;
 }
 
-body{
+html, body{
     background-color: var(--background);
 }
 
