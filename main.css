@@ -8,8 +8,8 @@
     src: url(../fonts/Poppins-Regular.otf);
 }
 
-@import url(header.css);
-@import url(banner.css);
+@import url(css/header.css);
+@import url(css/banner.css);
 
 :root{
     --background: #fffdf7;
