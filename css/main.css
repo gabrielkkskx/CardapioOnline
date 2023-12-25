@@ -35,3 +35,7 @@ b{
     font-family: 'PoppinsMedium', 'Rubik', sans-serif;
     color: var(--txt);
 }
+
+.laranja{
+    color: var(--primaria);
+}
