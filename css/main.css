@@ -8,6 +8,9 @@
     src: url(../fonts/Poppins-Regular.otf);
 }
 
+@import url(header.css);
+@import url(banner.css);
+
 :root{
     --background: #fffdf7;
     --preto: #212121;
@@ -27,45 +30,8 @@ html, body{
     color: var(--txt);
 }
 
-.laranja{
-    color: var(--primaria);
-}
-
 b{
     background-color: var(--background);
     font-family: 'PoppinsMedium', 'Rubik', sans-serif;
     color: var(--txt);
-}
-
-.nav-link{
-    color: var(--preto) !important;
-    padding-left: 35px !important;
-    padding-right: 35px !important;
-}
-
-.btn-white{
-    background-color: var(--branco);
-    color: var(--preto)!important;
-    border-radius: 20px;
-    padding: 15px 25px;
-    font-size: 20px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 1);
-}
-
-.btn-icon{
-    padding-right: 75px;
-}
-
-.btn-icon .icon{
-    display: inline-block;
-    color: var(--preto);
-    background-color: var(--primaria);
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    right: 10px;
-    margin-top: -9px;
-    border-radius: 15px;
-    text-align: center;
-    padding-top: 9px;
 }
