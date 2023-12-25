@@ -1,3 +1,6 @@
+@import url(css/header.css);
+@import url(css/banner.css);
+
 @font-face {
     font-family: 'PoppinsMedium';
     src: url(../fonts/Poppins-Medium.otf);
@@ -7,9 +10,6 @@
     font-family: 'PoppinsRegular';
     src: url(../fonts/Poppins-Regular.otf);
 }
-
-@import url(css/header.css);
-@import url(css/banner.css);
 
 :root{
     --background: #fffdf7;
