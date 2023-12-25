@@ -23,6 +23,14 @@
 
 html, body{
     background-color: var(--background);
+    font-family: 'PoppinsRegular', 'Rubik', sans-serif;
+    color: var(--txt);
+}
+
+b{
+    background-color: var(--background);
+    font-family: 'PoppinsMedium', 'Rubik', sans-serif;
+    color: var(--txt);
 }
 
 .nav-link{
