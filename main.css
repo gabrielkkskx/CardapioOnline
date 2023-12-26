@@ -39,12 +39,3 @@ b{
 .laranja{
     color: var(--primaria);
 }
-
-.btn-white{
-    background-color: var(--branco);
-    color: var(--preto)!important;
-    border-radius: 20px;
-    padding: 15px 25px;
-    font-size: 20px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 1);
-}
