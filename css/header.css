@@ -8,10 +8,6 @@ a.navbar-brand{
     padding-right: 35px !important;
 }
 
-.btn-icon{
-    padding-right: 75px;
-}
-
 .btn-white{
     background-color: var(--branco);
     color: var(--preto)!important;
@@ -19,6 +15,10 @@ a.navbar-brand{
     padding: 15px 25px;
     font-size: 20px;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 1);
+}
+
+.btn-icon{
+    padding-right: 75px;
 }
 
 .btn-icon .icon{
