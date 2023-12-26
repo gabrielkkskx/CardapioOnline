@@ -1,3 +1,7 @@
+a.navbar-brand{
+    margin-left: -25px;
+}
+
 .nav-link{
     color: var(--preto) !important;
     padding-left: 35px !important;
