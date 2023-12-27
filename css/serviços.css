@@ -39,3 +39,11 @@
     margin-bottom: 10px;
     cursor: default;
 }
+
+.background-servicos{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-image: url(../img/bg-icons-2.png);
+}
