@@ -16,3 +16,19 @@
     margin-top: 5px;
     margin-bottom: 30px;
 }
+
+.card-icon{
+    padding-bottom: 5px;
+}
+
+.card-texto{
+    color: var(--txt-claro);
+    font-size: 15px;
+    padding: 0 30px;
+}
+
+.card-texto p{
+    font-size: 22px;
+    color: var(--preto);
+    margin-bottom: 10px;
+}
