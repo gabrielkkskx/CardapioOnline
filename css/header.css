@@ -10,6 +10,7 @@ a.navbar-brand{
 
 .nav-link:hover{
     color: var(--card);
+    text-decoration: none;
 }
 
 .btn-white{
