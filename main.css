@@ -35,7 +35,7 @@ html, body{
 b{
     background-color: var(--background);
     font-family: 'PoppinsMedium', 'Rubik', sans-serif;
-    color: var(--txt);
+    color: var(--preto);
 }
 
 .laranja{
