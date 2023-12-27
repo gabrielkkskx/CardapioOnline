@@ -64,7 +64,7 @@
     background-color: var(--card);
     position: absolute;
     right: 0;
-    top: 80px;
+    top: -50px;
 }
 
 .img-banner img{
