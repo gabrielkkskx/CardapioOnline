@@ -10,7 +10,7 @@
     letter-spacing: 5px !important;
 }
 
-.titulo b{
+.titulo{
     color: var(--preto) !important;
     font-size: 40px !important;
     margin-top: 5px !important;
