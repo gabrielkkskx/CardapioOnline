@@ -6,12 +6,11 @@ a.navbar-brand{
     color: var(--preto);
     padding-left: 35px !important;
     padding-right: 35px !important;
-    padding-bottom: 4px !important;
 }
 
 .nav-link:hover{
     color: var(--card);
-    border-bottom: 1px solid var(--branco);
+    border-bottom: 1px solid #fff;
 }
 
 .btn-white{
