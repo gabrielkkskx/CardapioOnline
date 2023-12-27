@@ -1,5 +1,6 @@
 a.navbar-brand{
     margin-left: -25px;
+    cursor: default
 }
 
 .nav-link{

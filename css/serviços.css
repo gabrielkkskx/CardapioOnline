@@ -25,10 +25,12 @@
     color: var(--txt-claro);
     font-size: 15px;
     padding: 0 30px;
+    cursor: default;
 }
 
 .card-texto p{
     font-size: 22px;
     color: var(--preto);
     margin-bottom: 10px;
+    cursor: default;
 }

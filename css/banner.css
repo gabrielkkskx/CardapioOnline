@@ -12,12 +12,14 @@
 .banner-texto h1{
     color: var(--preto);
     font-size: 60px;
+    cursor: default;
 }
 
 .banner-texto p {
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 20px;
+    cursor: default;
 }
 
 .botao-amarelo{
