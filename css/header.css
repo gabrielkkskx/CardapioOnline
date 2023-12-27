@@ -23,7 +23,7 @@ a.navbar-brand{
 }
 
 .nav-link:hover{
-    color: var(--card);
+    color: var(--card) !important;
 }
 
 .btn-icon{
