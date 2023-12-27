@@ -8,6 +8,10 @@ a.navbar-brand{
     padding-right: 35px !important;
 }
 
+.nav-link:hover{
+    color: var(--card) !important;
+}
+
 .btn-white{
     background-color: var(--branco);
     color: var(--preto)!important;
@@ -20,10 +24,6 @@ a.navbar-brand{
 .btn-white.active,
 .btn-white:hover{
     background-color: var(--primaria);
-}
-
-.nav-link:hover{
-    color: var(--card) !important;
 }
 
 .btn-icon{
