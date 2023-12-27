@@ -22,6 +22,10 @@ a.navbar-brand{
     background-color: var(--primaria);
 }
 
+.nav-link:hover{
+    color: var(--card);
+}
+
 .btn-icon{
     padding-right: 75px;
 }
