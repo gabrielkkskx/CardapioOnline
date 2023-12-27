@@ -97,3 +97,7 @@
     right: 20px;
     bottom: 10px;
 }
+
+.botao-amarelo:hover{
+    background-color: var(--amarelo-hover);
+}
