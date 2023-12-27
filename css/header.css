@@ -17,6 +17,11 @@ a.navbar-brand{
     box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 1);
 }
 
+.btn-white.active,
+.btn-white:hover{
+    background-color: var(--primaria);
+}
+
 .btn-icon{
     padding-right: 75px;
 }
