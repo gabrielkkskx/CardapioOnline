@@ -93,7 +93,7 @@
 .card-case-nome{
     position: absolute;
     font-size: 12px;
-    color: var(--card);
+    color: var(--card) !important;
     right: 20px;
     bottom: 10px;
 }
