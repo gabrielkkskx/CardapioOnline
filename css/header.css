@@ -19,7 +19,7 @@ a.navbar-brand{
 
 .btn-white.active,
 .btn-white:hover{
-    background-color: var(--primaria);
+    color: var(--primaria);
 }
 
 .nav-link.active,
