@@ -22,7 +22,6 @@ a.navbar-brand{
     color: var(--primaria);
 }
 
-.nav-link.active,
 .nav-link:hover{
     background-color: var(--card);
 }
