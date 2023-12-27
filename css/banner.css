@@ -56,3 +56,44 @@
 .btn.social{
     width: 50px;
 }
+
+.card-banner{
+    width: 450px;
+    height: 450px;
+    border-radius: 170px;
+    background-color: var(--card);
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+.img-banner img{
+    position: absolute;
+    width: 570px;
+    top: 30px;
+    right: 15px;
+}
+
+.card{
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+}
+
+.card-case{
+    width: 350px;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    bottom: -75px;
+}
+
+.card-case-nome{
+    position: absolute;
+    font-size: 12px;
+    color: var(--primaria);
+    right: 20px;
+    bottom: 10px;
+}
