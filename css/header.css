@@ -9,7 +9,7 @@ a.navbar-brand{
 }
 
 .nav-link:hover{
-    color: var(--card) !important;
+    color: var(--card);
 }
 
 .btn-white{
