@@ -3,7 +3,7 @@ a.navbar-brand{
 }
 
 .nav-link{
-    color: var(--preto) !important;
+    color: var(--preto);
     padding-left: 35px !important;
     padding-right: 35px !important;
 }
