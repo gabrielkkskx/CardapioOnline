@@ -79,14 +79,14 @@
     margin-left: 15px;
 }
 
-.card-item:hover{
+.card-item:hover {
     color: var(--primaria);
 }
 
-.card-item:hover .titulo-produto{
+.card-item:hover .titulo-produto {
     display: none;
 }
 
-.card-item:hover .add-carrinho{
+.card-item:hover .add-carrinho {
     display: none;
 }
