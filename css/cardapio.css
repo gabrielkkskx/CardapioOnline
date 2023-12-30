@@ -82,8 +82,8 @@
     font-size: 16px;
     padding: 4px 10px;
     border-radius: 10px;
-    color: var(--branco);
-    background-color: var(--preto);
+    color: var(--preto);
+    background-color: var(--branco);
     margin-left: 15px;
 }
 
@@ -105,6 +105,6 @@
 }
 
 .btn-add:hover{
-    background-color: var(--branco) !important;
-    color: var(--preto) !important;
+    background-color: var(--preto);
+    color: var(--branco);
 }
