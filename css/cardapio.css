@@ -104,7 +104,7 @@
     margin-top: 20px
 }
 
-.card-item:hover .btn-add{
+.btn-add:hover{
     background-color: var(--branco) !important;
     color: var(--preto) !important;
 }
