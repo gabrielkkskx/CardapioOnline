@@ -80,7 +80,7 @@
 }
 
 .card-item:hover {
-    color: var(--primaria);
+    background-color: var(--primaria);
 }
 
 .card-item:hover .titulo-produto {
