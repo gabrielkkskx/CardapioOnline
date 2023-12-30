@@ -1,0 +1,13 @@
+.depoimentos{
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.card-depoimentos{
+    height: 390px;
+    width: 390px;
+    border-radius: 120px;
+    background-color: var(--secundaria);
+    position: absolute;
+    left: 0;
+}
