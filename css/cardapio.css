@@ -90,3 +90,8 @@
 .card-item:hover .add-carrinho {
     display: flex;
 }
+
+.card-item:hover .preço{
+    color: var(--preto) !important;
+    margin-top: 20px
+}
