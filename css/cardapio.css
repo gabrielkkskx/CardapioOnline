@@ -3,6 +3,10 @@
     padding-bottom: 150px;
 }
 
+.container-menu{
+    margin-bottom: 40px;
+}
+
 .card-item{
     height: 360px;
 }
