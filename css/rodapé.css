@@ -1,0 +1,26 @@
+footer{
+    background: var(--secundaria);
+}
+
+.logo-rodape{
+    width: 150px;
+}
+
+.container-logo-rodape,
+.container-texto-rodape,
+.container-social-rodape{
+    display: flex;
+    align-items: center;
+}
+
+.container-logo-rodape{
+    justify-content: start;
+}
+
+.container-texto-rodape{
+    justify-content: center;
+}
+
+.container-social-rodape{
+    justify-content: end;
+}
