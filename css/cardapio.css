@@ -13,7 +13,7 @@
 }
 
 /* deixar o texto em uma linha */
-.card-item .titulo-produto{
+.titulo-produto{
     color: var(--preto);
     text-overflow: ellipsis;
     white-space: nowrap;
