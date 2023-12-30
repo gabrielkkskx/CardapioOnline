@@ -103,3 +103,8 @@
     color: var(--preto) !important;
     margin-top: 20px
 }
+
+.card-item:hover .btn-add{
+    background-color: var(--branco);
+    color: var(--preto);
+}
