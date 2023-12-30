@@ -57,6 +57,7 @@
 
 .nota-depoimento span{
     color: var(--preto);
+    cursor: default;
 }
 
 .texto-depoimentos{
