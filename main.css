@@ -44,3 +44,15 @@ b{
 .laranja{
     color: var(--primaria);
 }
+
+#copy{
+    background-color: #263138;
+    text-align: center;
+    padding: 24px;
+    color: #FFF;
+  }
+  
+  .nick {
+    color: var(--laranja);
+    text-decoration: none;
+  }
