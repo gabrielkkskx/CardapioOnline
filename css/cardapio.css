@@ -81,8 +81,12 @@
 
 .card-item:hover{
     color: var(--primaria);
+}
 
-    .titulo-produto{
-        display: none;
-    }
+.card-item:hover .titulo-produto{
+    display: none;
+}
+
+.card-item:hover .add-carrinho{
+    display: none;
 }
