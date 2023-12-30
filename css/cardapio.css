@@ -3,6 +3,14 @@
     padding-bottom: 150px;
 }
 
+.background-cardapio{
+    position: absolute;
+    width: 0;
+    right: 0;
+    height: 500px;
+    background-image: url(../img/bg-icons-1.png);
+}
+
 .container-menu{
     margin-bottom: 40px;
 }
