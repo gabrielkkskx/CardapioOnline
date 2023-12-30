@@ -3,6 +3,14 @@
     padding-bottom: 150px;
 }
 
+.background-dep{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-image: url(../img/bg-icons-2.png);
+}
+
 .hidden{
     display: none !important;
 }
