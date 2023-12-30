@@ -11,3 +11,26 @@
     position: absolute;
     left: 0;
 }
+
+.container-dados-depoimento{
+    display: flex;
+}
+
+.depoimento{
+    margin-top: 70px;
+}
+
+.img-depoimento{
+    width: 65px;
+    height: 65px;
+    background-color: var(--branco);
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 15px;
+}
+
+#depoimento-1 .img-depoimento{
+    background-image: url(../img/diego.jpg);
+    background-size: cover;
+}
