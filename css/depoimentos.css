@@ -35,6 +35,15 @@
     background-size: cover;
 }
 
+#depoimento-2 .img-depoimento{
+    background-image: url(../img/ana.jpg);
+    background-size: cover;
+}
+
+#depoimento-3 .img-depoimento{
+    background-image: url(../img/joao.jpg);
+}
+
 .nome-depoimento{
     color: var(--preto);
     font-size: 22px;
