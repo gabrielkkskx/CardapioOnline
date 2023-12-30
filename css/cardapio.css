@@ -13,7 +13,7 @@
 }
 
 /* deixar o texto em uma linha */
-.titulo-produto{
+.card-item .titulo-produto{
     color: var(--preto);
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -24,7 +24,7 @@
 
 /* */
 
-.preço{
+.card-item .preço{
     color: var(--primaria);
     font-size: 24px;
 }
