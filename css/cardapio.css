@@ -105,6 +105,6 @@
 }
 
 .card-item:hover .btn-add{
-    background-color: var(--branco);
-    color: var(--preto);
+    background-color: var(--branco) !important;
+    color: var(--preto) !important;
 }
