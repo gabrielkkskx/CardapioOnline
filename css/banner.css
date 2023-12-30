@@ -59,6 +59,8 @@
     width: 50px;
 }
 
+/* fundo amarelo hamburguer */
+
 .card-banner{
     width: 450px;
     height: 450px;
@@ -68,6 +70,8 @@
     right: 0;
     top: -50px;
 }
+
+/* */
 
 .img-banner img{
     position: absolute;
