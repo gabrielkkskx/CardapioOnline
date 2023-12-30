@@ -57,3 +57,8 @@ b{
     color: var(--laranja);
     text-decoration: none;
   }
+
+  .nick:hover{
+    color: var(--amarelo-hover);
+    text-decoration: none;
+  }
