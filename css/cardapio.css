@@ -88,5 +88,5 @@
 }
 
 .card-item:hover .add-carrinho {
-    display: none;
+    display: flex;
 }
