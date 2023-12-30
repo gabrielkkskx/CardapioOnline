@@ -34,7 +34,7 @@
 }
 
 .card-item .add-carrinho{
-    /* display: none; */
+    display: none;
     text-align: center;
     height: 30px;
     justify-content: center;
@@ -49,4 +49,40 @@
     border-bottom-left-radius: 10px;
     font-size: 14px;
     cursor: pointer;
+}
+
+.btn-mais{
+    color: var(--preto);
+    padding: 5px 7px;
+    border: 2px solid var(--preto);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.add-numero-itens{
+    color: var(--preto);
+    padding: 2px 15px;
+    border-top: 2px solid var(--preto);
+    border-bottom: 2px solid var(--preto);
+    font-size: 18px;
+}
+
+.btn-add{
+    border: 2px solid var(--preto);
+    font-size: 16px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: var(--branco);
+    background-color: var(--preto);
+    margin-left: 15px;
+}
+
+.card-item:hover{
+    color: var(--primaria);
+
+    .titulo-produto{
+        display: none;
+    }
 }
