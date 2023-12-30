@@ -34,3 +34,17 @@
     background-image: url(../img/diego.jpg);
     background-size: cover;
 }
+
+.nome-depoimento{
+    color: var(--preto);
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.nota-depoimento{
+    color: var(--primaria);
+}
+
+.nota-depoimento span{
+    color: var(--preto);
+}
