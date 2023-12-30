@@ -42,6 +42,7 @@
 
 #depoimento-3 .img-depoimento{
     background-image: url(../img/joao.jpg);
+    background-size: cover;
 }
 
 .nome-depoimento{
