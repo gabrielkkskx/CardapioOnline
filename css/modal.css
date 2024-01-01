@@ -62,3 +62,50 @@
     font-size: 20px;
     color: var(--preto);
 }
+
+.modal-full .item-carrinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--separate);
+}
+
+.modal-full .item-carrinho:last-child{
+    border-bottom: none;
+}
+
+.modal-full .img-produto{
+    width: 100px;
+    border-radius: 11px;
+}
+
+.modal-full .titulo-produto{
+    color: var(--preto);
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.modal-full .preço{
+    color: var(--primaria);
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.modal-full .dados-produto{
+    flex: 1;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.modal-full .add-carrinho{
+    display: flex;
+    text-align: center;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
