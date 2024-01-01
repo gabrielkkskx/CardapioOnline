@@ -139,3 +139,7 @@
     color: var(--primaria);
     font-size: 24px;
 }
+
+.container-total .botao-amarelo:hover{
+    background-color: var(--primaria);
+}
