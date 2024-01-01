@@ -28,11 +28,11 @@
 .m-body::-webkit-scrollbar{
     width: 6px;
     background: transparent;
-    border-radius: 10px;
 }
 
 .m-body::-webkit-scrollbar-thumb{
     background: var(--separate);
+    border-radius: 10px;
 }
 
 .m-body::-webkit-scrollbar-track{
