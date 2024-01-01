@@ -34,10 +34,10 @@
 }
 
 html, body{
+    scroll-behavior: smooth;
     background-color: var(--background);
     font-family: 'PoppinsRegular', 'Rubik', sans-serif;
     color: var(--txt);
-    scroll-behavior: smooth;
 }
 
 b{
