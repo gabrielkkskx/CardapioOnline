@@ -118,6 +118,4 @@
     color: var(--branco);
     background-color: var(--vermelho);
     margin-left: 15px;
-    justify-content: center;
-    align-items: center;
 }
