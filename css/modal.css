@@ -31,7 +31,7 @@
 }
 
 .m-body::-webkit-scrollbar-thumb{
-    background: var(--branco);
+    background: var(--preto);
 }
 
 .m-body::-webkit-scrollbar-track{
