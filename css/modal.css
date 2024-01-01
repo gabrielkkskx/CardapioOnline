@@ -168,6 +168,10 @@
     border: none;
 }
 
+select.form-control{
+    height: 60px !important;
+}
+
 .container-cep .form-control{
     padding-right: 75px;
 }
