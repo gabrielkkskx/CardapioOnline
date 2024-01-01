@@ -181,3 +181,34 @@ select.form-control{
     right: 25px;
     top: 38px;
 }
+
+.img-produto-resumo img{
+    width: 50px;
+    border-radius: 11px;
+}
+
+.item-carrinho.resumo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titulo-produto-resumo{
+    color: var(--preto);
+    font-size: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.preço-produto-resumo{
+    color: var(--primaria);
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.quantidade-produto-resumo{
+    color: var(--preto);
+    font-size: 20px;
+    margin-bottom: 0;
+}
