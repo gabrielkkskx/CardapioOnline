@@ -119,3 +119,23 @@
     background-color: var(--vermelho);
     margin-left: 15px;
 }
+
+.container-total{
+    padding-top: 20px;
+    border-top: 1px solid var(--separate);
+}
+
+.container-total .txt-entrega{
+    color: var(--separate);
+}
+
+.container-total .txt-total{
+    color: var(--preto);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.container-total .valor-total{
+    color: var(--primaria);
+    font-size: 24px;
+}
