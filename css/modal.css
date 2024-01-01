@@ -166,3 +166,13 @@
     box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 1) !important;
     border: none;
 }
+
+.container-cep .form-control{
+    padding-right: 75px;
+}
+
+.container-cep .btn{
+    position: absolute;
+    right: 25px;
+    top: 38px;
+}
