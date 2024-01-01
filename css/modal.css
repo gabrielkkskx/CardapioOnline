@@ -53,3 +53,7 @@
 .etapa:last-child::before{
     content: none;
 }
+
+.etapa.active, .etapa.active::before{
+    background-color: var(--primaria);
+}
