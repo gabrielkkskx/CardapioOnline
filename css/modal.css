@@ -26,13 +26,13 @@
 /* Alterar a barra de scroll */
 
 .m-body::-webkit-scrollbar{
-    width: 6px;
+    width: 4px;
     background: transparent;
 }
 
 .m-body::-webkit-scrollbar-thumb{
     background: var(--separate);
-    border-radius: 10px;
+    border-radius: 13px;
 }
 
 .m-body::-webkit-scrollbar-track{
