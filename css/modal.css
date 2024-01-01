@@ -57,3 +57,8 @@
 .etapa.active, .etapa.active::before{
     background-color: var(--primaria);
 }
+
+.titulo-carrinho{
+    font-size: 20px;
+    color: var(--preto);
+}
