@@ -23,6 +23,23 @@
     overflow-x: hidden;
 }
 
+/* Alterar a barra de scroll */
+
+.m-body::-webkit-scrollbar{
+    width: 6px;
+    background: transparent;
+}
+
+.m-body::-webkit-scrollbar-thumb{
+    background: var(--branco);
+}
+
+.m-body::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+/*  */
+
 .etapas{
     display: flex;
 }
@@ -138,8 +155,4 @@
 .container-total .valor-total{
     color: var(--primaria);
     font-size: 24px;
-}
-
-.container-total .botao-amarelo:hover{
-    background-color: var(--primaria);
 }
