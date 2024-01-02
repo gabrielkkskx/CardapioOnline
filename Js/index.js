@@ -25,8 +25,7 @@ cardapio.metodos = {
         $.each(filtro, (i, e) => {
 
             let temp = cardapio.templates.item;
-
-            $("#itens-cardapio").append(temp)
+            $("#itensCardapio").append(temp)
             
         })
         
