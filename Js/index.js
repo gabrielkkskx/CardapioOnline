@@ -2,6 +2,8 @@ var cardapio = {}
 
 $(document).ready(function () {
 
+    cardapio.eventos.init();
+
 })
 
 cardapio.eventos = {
