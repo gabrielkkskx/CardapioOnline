@@ -3,6 +3,10 @@
     padding-bottom: 150px;
 }
 
+.img-pizza img{
+    width: 550px;
+}
+
 .background-dep{
     position: absolute;
     left: 0;
