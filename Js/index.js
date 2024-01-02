@@ -1,10 +1,10 @@
-var cardapio = {}
-
 $(document).ready(function () {
 
     cardapio.eventos.init();
 
 })
+
+var cardapio = {};
 
 cardapio.eventos = {
 
@@ -24,13 +24,13 @@ cardapio.metodos = {
 
         $.each(filtro, (i, e) => {
 
-            let temp = cardapio.templates.item
+            let temp = cardapio.templates.item;
 
             $("#itens-cardapio").append(temp)
             
         })
         
-    }
+    },
 
 }
 
