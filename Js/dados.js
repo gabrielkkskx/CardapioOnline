@@ -2,7 +2,7 @@ var MENU = {
     "churrasco": [
         {
             "id": "ribs-brisket-and-burnt-ends",
-            "img": "./img/cardapio/churrasco/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg",
+            "img": "./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518",
             "name": "Joe's KC BBQ",
             "dsc": "Joe's KC Ribs, Brisket & Burnt Ends",
             "price": 110.99
