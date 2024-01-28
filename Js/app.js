@@ -1,4 +1,4 @@
-$(document).read(function () {
+$(document).ready(function () {
 
 })  
 
