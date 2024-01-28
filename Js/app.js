@@ -56,7 +56,7 @@ cardapio.metodos = {
     //clique no botão de ver mais
     verMais: () => {
 
-        var ativo = $(".container-menu a.active").attr('id').split('menu-')[1]
+        var ativo = $(".container-menu a.active").attr('id').split('menu-')[1];
         cardapio.metodos.obterItensCardapio(ativo, true);
 
         $("#btnVerMais").addClass('hidden');
