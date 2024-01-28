@@ -24,7 +24,7 @@ cardapio.metodos = {
 
             let temp = cardapio.templates.item.replace(/\${img}/g, e.img)
             .replace(/\${name}/g, e.name)
-            .replace(/\${price}/g, e.price)
+            .replace(/\${price}/g, e.price.toFixed(2).replace('.', ','))
 
 
             $("#itensCardapio").append(temp)
