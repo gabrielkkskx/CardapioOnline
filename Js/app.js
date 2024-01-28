@@ -7,12 +7,20 @@ var cardapio = {};
 cardapio.eventos = {
 
     init: () => {
-        console.log('iniciou')
+        
     }
 
 }
 
 cardapio.metodos = {
+
+    //obtém a lista de itens do cardápio
+    obterItensCardapio: () => {
+
+        var filtro = MENU['burgers'];
+        console.log(filtro)
+
+    }
 
 }
 
