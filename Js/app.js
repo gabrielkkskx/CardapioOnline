@@ -15,10 +15,12 @@ cardapio.eventos = {
 cardapio.metodos = {
 
     //obtém a lista de itens do cardápio
-    obterItensCardapio: () => {
+    obterItensCardapio: (categoria = 'burgers') => {
 
-        var filtro = MENU['burgers'];
+        var filtro = MENU[categoria];
         console.log(filtro);
+
+        $("#itensCardapio").html('')
 
         $.each(filtro, (i, e) => {
 
