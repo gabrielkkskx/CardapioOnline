@@ -22,7 +22,9 @@ cardapio.metodos = {
 
         $.each(filtro, (i, e) => {
 
-            let temp = cardapio.templates.item;
+            let temp = cardapio.templates.item.replace(/\${img}/g, e.img);
+
+            
             $("#itensCardapio").append(temp)
 
         })
@@ -37,7 +39,7 @@ cardapio.templates = {
             <div class="col-3 mb-5">
             <div class="card card-item">
                 <div class="img-produto">
-                    <img src="./img/cardapio/burguers/shake-shack-shackburger-16-pack.316f8b09144db65931ea29e34869287a.jpg" />
+                    <img src="\${img}" />
                 </div>
                 
                 <p class="titulo-produto text-center mt-4">
