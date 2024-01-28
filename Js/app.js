@@ -33,6 +33,12 @@ cardapio.metodos = {
 
         })
 
+        //remove o active
+        $(".container-menu a").removeClass('active');
+
+        // seta o menu p ativo
+        $("#menu-" + categoria).addClass('active')
+
     },
 
 }
