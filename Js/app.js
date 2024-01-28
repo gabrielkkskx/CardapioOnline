@@ -12,6 +12,6 @@ cardapio.metodos = {
 
 }
 
-cardapio.templates{
-    
+cardapio.templates = {
+
 }
