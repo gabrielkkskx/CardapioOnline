@@ -39,7 +39,7 @@ cardapio.metodos = {
 
             //paginação inicial (8 itens)
             if (!vermais && i < 8) {
-
+                $("#itensCardapio").append(temp)
             }
 
 
