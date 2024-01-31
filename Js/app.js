@@ -87,7 +87,7 @@ cardapio.metodos = {
     //add item ao carrinho
     adicionarCarrinho: (id) => {
 
-        let quantiaAtual = parseInt($("quantia-" + id).text());
+        let quantiaAtual = parseInt($("#quantia-" + id).text());
 
         if(quantiaAtual > 0) {
 
@@ -100,17 +100,16 @@ cardapio.metodos = {
             //obtem o item
             let item = $.grep(filtro, (e, i) => { return e.id == id});
 
-            if (item.lenght > 0) {
+            if (item.length > 0) {
 
                 //validar se já tem o item no carrinho
                 let existe = $.grep(carrinho, (elem, index) => { return elem.id ==id});
 
                 //caso já exista o item no carrinho
-                if (existe.lenght > 0) {
+                if (existe.length > 0) {
                     let objIndex = carrinho.findIndex((obj => obj.id == id));
                     carrinho[objIndex].quantia = carrinho[objIndex].quantia + quantiaAtual;
                 }
-
                 //caso ainda não exista, add ele
                 else {
                     item[0].quantia = quantiaAtual;
