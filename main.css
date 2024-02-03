@@ -19,6 +19,7 @@
 
 :root{
     --background: #fffdf7;
+    --black: #000;
     --preto: #212121;
     --branco: #fff;
     --txt: #4f4f4f;
@@ -93,7 +94,7 @@ b{
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    color: var(--preto);
+    color: var(--black);
     border-radius: 50px;
     cursor: pointer;
     z-index: 1;
