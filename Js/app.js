@@ -240,8 +240,8 @@ cardapio.metodos = {
             $.each(carrinho, (i, e) => {
 
                 let temp = cardapio.templates.itemCarrinho.replace(/\${img}/g, e.img)
-                .replace(/\${nome}/g, e.name)
-                .replace(/\${preco}/g, e.price.toFixed(2).replace('.', ','))
+                .replace(/\${name}/g, e.name)
+                .replace(/\${price}/g, e.price.toFixed(2).replace('.', ','))
                 .replace(/\${id}/g, e.id)
                 .replace(/\${quantia}/g, e.quantia)
 
