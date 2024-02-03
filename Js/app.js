@@ -183,42 +183,7 @@ cardapio.metodos = {
             $("#btnVoltar").addClass('hidden');
         }
 
-        else if(etapa == 2) {
-            $("#lblTituloEtapa").text('Endereço de entrega:');
-            $("#itens-carrinho").addClass('hidden');
-            $("#local-entrega").removeClass('hidden');
-            $("#resumo-carrinho").addClass('hidden');
 
-            //Etapas ativas
-            $(".etapa").removeClass('active');
-            $(".etapa1").addClass('active');
-            $(".etapa2").addClass('active');
-            //
-            
-            $("#btnEtapaPedido").addClass('hidden');
-            $("#btnEtapaEndereco").removeClass('hidden');
-            $("#btnEtapaResumo").addClass('hidden');
-            $("#btnVoltar").removeClass('hidden');
-        }
-
-        else if(etapa == 3) {
-            $("#lblTituloEtapa").text('Resumo do pedido:');
-            $("#itens-carrinho").addClass('hidden');
-            $("#local-entrega").addClass('hidden');
-            $("#resumo-carrinho").removeClass('hidden');
-
-            //Etapas ativas
-            $(".etapa").removeClass('active');
-            $(".etapa1").addClass('active');
-            $(".etapa2").addClass('active');
-            $(".etapa3").addClass('active');
-            //
-            
-            $("#btnEtapaPedido").addClass('hidden');
-            $("#btnEtapaEndereco").addClass('hidden');
-            $("#btnEtapaResumo").removeClass('hidden');
-            $("#btnVoltar").removeClass('hidden');
-        }
 
     },
 
