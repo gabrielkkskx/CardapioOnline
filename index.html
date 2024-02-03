@@ -554,7 +554,7 @@
 
                 </div>
 
-                <div id="resumo-carrinho" class="row mr-0 ml-0">
+                <div id="resumo-carrinho" class="row mr-0 ml-0 hidden">
 
                     <div class="col-12">
                         <p class="titulo-carrinho mt-4">
@@ -636,11 +636,11 @@
                     </p>
                 </div>
 
-                <a href="" class="btn botao-amarelo float-right" id="btnEtapaPedido">
+                <a onclick="cardapio.metodos.carregarEtapa(2)" href="" class="btn botao-amarelo float-right" id="btnEtapaPedido">
                     Continuar
                 </a>
 
-                <a href="" class="btn botao-amarelo float-right hidden" id="btnEtapaEndereco">
+                <a onclick="cardapio.metodos.carregarEtapa(3)" href="" class="btn botao-amarelo float-right hidden" id="btnEtapaEndereco">
                     Revisar pedido
                 </a>
 
@@ -648,7 +648,7 @@
                     Enviar pedido
                 </a>
 
-                <a href="" class="btn btn-white mr-3 float-right hidden" id="btnVoltar">
+                <a onclick="cardapio.metodos.voltarEtapa()" href="" class="btn btn-white mr-3 float-right hidden" id="btnVoltar">
                     Voltar
                 </a>
             </div>
