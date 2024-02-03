@@ -99,3 +99,29 @@ b{
     cursor: pointer;
     z-index: 1;
 }
+
+/*  */
+
+.container-msg{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+}
+
+.toast{
+    color: var(--branco);
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.toast.red{
+    background-color: var(--vermelho);
+}
+
+.toast.green{
+    background-color: var(--verde);
+}

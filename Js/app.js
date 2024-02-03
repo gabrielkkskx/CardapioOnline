@@ -116,6 +116,7 @@ cardapio.metodos = {
                     carrinho.push(item[0])
                 }
 
+                cardapio.metodos.mensagem('Item adicionado ao carrinho', 'green')
                 //após add no carrinho, reseta a quantia pra 0
                 $("#quantia-" + id).text(0);
 
@@ -150,6 +151,19 @@ cardapio.metodos = {
         $(".badge-total-carrinho").html(total);
 
     },
+
+    mensagem: (texto, cor = 'red', tempo = 3500) => {
+
+        let id = Math.floor(Date.now() * Math.random()).toString();
+
+        let msg = `<div id="msg-${id}" class="toast ${cor}">${texto}</div>`;
+        
+        $(".container-msg").append(msg);
+
+        setTimeout(() => {
+            $("#msg-" + id).remove();
+        }, tempo)
+    }
 
 }
 
