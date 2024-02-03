@@ -170,9 +170,9 @@ cardapio.metodos = {
 
         if(etapa == 1) {
             $("#lblTituloEtapa").text('Seu carrinho:');
-            $("#itens-carrinho").removeClass('hidden');
-            $("#local-entrega").addClass('hidden');
-            $("#resumo-carrinho").addClass('hidden');
+            $("#itensCarrinho").removeClass('hidden');
+            $("#localEntrega").addClass('hidden');
+            $("#resumoCarrinho").addClass('hidden');
 
             $(".etapa").removeClass('active');
             $(".etapa1").addClass('active');
@@ -183,7 +183,42 @@ cardapio.metodos = {
             $("#btnVoltar").addClass('hidden');
         }
 
+        else if(etapa == 2) {
+            $("#lblTituloEtapa").text('Endereço de entrega:');
+            $("#itensCarrinho").addClass('hidden');
+            $("#localEntrega").removeClass('hidden');
+            $("#resumoCarrinho").addClass('hidden');
 
+            //Etapas ativas
+            $(".etapa").removeClass('active');
+            $(".etapa1").addClass('active');
+            $(".etapa2").addClass('active');
+            //
+            
+            $("#btnEtapaPedido").addClass('hidden');
+            $("#btnEtapaEndereco").removeClass('hidden');
+            $("#btnEtapaResumo").addClass('hidden');
+            $("#btnVoltar").removeClass('hidden');
+        }
+
+        else if(etapa == 3) {
+            $("#lblTituloEtapa").text('Resumo do pedido:');
+            $("#itensCarrinho").addClass('hidden');
+            $("#localEntrega").addClass('hidden');
+            $("#resumoCarrinho").removeClass('hidden');
+
+            //Etapas ativas
+            $(".etapa").removeClass('active');
+            $(".etapa1").addClass('active');
+            $(".etapa2").addClass('active');
+            $(".etapa3").addClass('active');
+            //
+            
+            $("#btnEtapaPedido").addClass('hidden');
+            $("#btnEtapaEndereco").addClass('hidden');
+            $("#btnEtapaResumo").removeClass('hidden');
+            $("#btnVoltar").removeClass('hidden');
+        }
 
     },
 
@@ -192,14 +227,6 @@ cardapio.metodos = {
         let etapa = $(".etapa.active").length;
         cardapio.metodos.carregarEtapa(etapa - 1);
     },
-
-
-
-
-
-
-
-
 
     //alertas/mensagens
     mensagem: (texto, cor = 'red', tempo = 3500) => {
