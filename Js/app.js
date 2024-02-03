@@ -343,7 +343,7 @@ cardapio.templates = {
                 <span class="add-numero-itens" id="quantia-carrinho-\${id}">\${quantia}</span>
                 <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidadeCarrinho('\${id}')"><i class="fas fa-plus"></i></span>
                 <span class="btn btn-remove" onclick="cardapio.metodos.removerItemCarrinho"><i class="fa fa-times"></i></span>
-            </di: v>
+            </div>
         </div>
     `
 }
