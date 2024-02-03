@@ -119,9 +119,35 @@ cardapio.metodos = {
                 //após add no carrinho, reseta a quantia pra 0
                 $("#quantia-" + id).text(0);
 
+                cardapio.metodos.atualizarBadgeTotal();
+
             }
 
         }
+
+    },
+
+    //atualiza a quantia de itens no badge do meu carrinho
+    atualizarBadgeTotal: () => {
+
+        var total = 0;
+
+        $.each(carrinho, (i, e) => {
+            total += e.quantia
+        })
+
+        if (total > 0) {
+            //se tiver item no botão remove o hidden e ele aparece
+            $(".botao-carrinho").removeClass('hidden');
+            $(".container-total-carrinho").removeClass('hidden');
+        }
+        else{
+            //se o total for 0, o item continua sem aparecer
+            $(".botao-carrinho").addClass('hidden');
+            $(".container-total-carrinho").addClass('hidden');
+        }
+
+        $(".badge-total-carrinho").html(total);
 
     },
 
