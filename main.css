@@ -115,7 +115,6 @@ b{
     font-size: 18px;
     border-radius: 15px;
     margin-bottom: 10px;
-    transition: all 0.5s;
 }
 
 .toast.red{

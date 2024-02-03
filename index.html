@@ -8,17 +8,18 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="main.css">   
     <title>Cardápio</title>
 </head>
 <body>
 
     <div class="container-msg" id="container-msg">
-        
+
     </div>
 
     <!-- badge de icons add no carrinho -->
-    <a class="botao-carrinho hidden">
+    <a class="botao-carrinho hidden" onclick="cardapio.metodos.abrirCarrinho(true)">
         <div class="badge-total-carrinho">0</div>
         <i class="fa fa-shopping-bag"></i>
     </a>
@@ -60,7 +61,7 @@
 
                     </ul>
 
-                    <a class="btn btn-white btn-icon">
+                    <a class="btn btn-white btn-icon" onclick="cardapio.metodos.abrirCarrinho(true)">
                         Meu carrinho 
                         <span class="icon">
                             <div class="container-total-carrinho badge-total-carrinho hidden">0</div>
@@ -419,12 +420,12 @@
         </div>
     </footer>
 
-    <div class="modal-full hidden" id="modal-carrinho">
+    <div class="modal-full hidden" id="modalCarrinho">
       
         <div class="m-header">
 
             <div class="container">
-                <a href="#" class="btn btn-white btn-sm float-right">
+                <a href="#" class="btn btn-white btn-sm float-right" onclick="cardapio.metodos.carrinho(false)">
                     Fechar
                 </a>
 

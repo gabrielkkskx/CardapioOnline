@@ -152,16 +152,35 @@ cardapio.metodos = {
 
     },
 
+    //abrir a modal de carrinho
+    abrirCarrinho: (abrir) => {
+
+        if(abrir) {
+            $("#modalCarrinho").removeClass('hidden');
+        }
+        else {
+            $("#modalCarrinho").addClass('hidden');
+        }
+
+    },
+
+
+
+    //alertas/mensagens
     mensagem: (texto, cor = 'red', tempo = 3500) => {
 
         let id = Math.floor(Date.now() * Math.random()).toString();
 
-        let msg = `<div id="msg-${id}" class="toast ${cor}">${texto}</div>`;
+        let msg = `<div id="msg-${id}" class="animated fadeInDown toast ${cor}">${texto}</div>`;
         
         $(".container-msg").append(msg);
 
         setTimeout(() => {
-            $("#msg-" + id).remove();
+            $("#msg-").removeClass('fadeInDown');
+            $("#msg-").addClass('fadeOutUp');
+            setTimeout(() => {
+                $("#msg-" + id).remove();
+            }, 800);
         }, tempo)
     }
 
