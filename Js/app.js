@@ -183,7 +183,7 @@ cardapio.metodos = {
             $("#btnVoltar").addClass('hidden');
         }
 
-        if(etapa == 2) {
+        else if(etapa == 2) {
             $("#lblTituloEtapa").text('Endereço de entrega:');
             $("#itens-carrinho").addClass('hidden');
             $("#local-entrega").removeClass('hidden');
@@ -201,7 +201,7 @@ cardapio.metodos = {
             $("#btnVoltar").removeClass('hidden');
         }
 
-        if(etapa == 3) {
+        else if(etapa == 3) {
             $("#lblTituloEtapa").text('Resumo do pedido:');
             $("#itens-carrinho").addClass('hidden');
             $("#local-entrega").addClass('hidden');
