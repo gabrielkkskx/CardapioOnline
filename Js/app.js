@@ -258,7 +258,15 @@ cardapio.metodos = {
 
     diminuirQuantidadeCarrinho: (id) => {
 
+        let quantiaAtual = parseInt($("#quantia-carrinho-" + id).text());
 
+        if (quantiaAtual > 1) {
+            $("quantia-carrinho-" + id).text(quantiaAtual - 1);
+            cardapio.metodos.atualizarCarrinho(id, quantiaAtual - 1);
+        }
+        else {
+            cardapio.metodos.removerItemCarrinho(id)
+        }
 
     },
 
@@ -271,6 +279,16 @@ cardapio.metodos = {
     removerItemCarrinho: (id) => {
 
 
+
+    },
+
+    //atualiza o carrinho com a quantia atual
+    atualizarCarrinho: (id, quantia) => {
+        
+        let objIndex = carrinho.findIndex((obj => obj.id == id));
+        carrinho[objIndex].quantia = quantia;
+
+        cardapio.metodos.atualizarBadgeTotal();
 
     },
 
