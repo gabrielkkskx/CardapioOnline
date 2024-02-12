@@ -259,14 +259,19 @@ cardapio.metodos = {
     diminuirQuantidadeCarrinho: (id) => {
 
         let quantiaAtual = parseInt($("#quantia-carrinho-" + id).text());
-
+        
+        console.log("ID:", id);
+        console.log("Quantidade Atual:", quantiaAtual);
+        
         if (quantiaAtual > 1) {
             $("#quantia-carrinho-" + id).text(quantiaAtual - 1);
             cardapio.metodos.atualizarCarrinho(id, quantiaAtual - 1);
+            console.log("Quantidade diminuída com sucesso!");
         } 
         else {
-            cardapio.metodos.removerItemCarrinho(id)
-        }
+            cardapio.metodos.removerItemCarrinho(id);
+            console.log("Removendo item do carrinho...");
+        }        
 
     },
 
