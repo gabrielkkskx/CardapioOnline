@@ -491,14 +491,16 @@ cardapio.metodos = {
         if(carrinho.length > 0 && meuEndereco != null) {
 
             var texto = 'Olá, gostaria de fazer um pedido:';
-            texto += `\n*Itens do pedido:*\n\n${itens}`;    // '\n' quebra linhas
+            texto += `\n*Itens do pedido:*\n\n\${itens}`;    // '\n' quebra linhas
+            
+            var itens = '';    
+
             texto += '\n*Endereço de entrega:*';
             texto += `\n${meuEndereco.endereco}, ${meuEndereco.numero}, ${meuEndereco.bairro}`;
             texto += `\n${meuEndereco.cidade}-${meuEndereco.uf} / ${meuEndereco.cep} ${meuEndereco.complemento}`;
-
             texto += `\n\n*Total (com entrega): R$ ${(valorCarrinho + valorEntrega).toFixed(2).replace('.', ',')}*`;
 
-            var itens = '';
+
             
             $.each(carrinho, (i, e) => {
 
@@ -592,26 +594,26 @@ cardapio.templates = {
     </div>
 `,
 
-itemResumo: `
-    <div class="col-12 item-carrinho resumo">
-        <div class="img-produto-resumo">
-            <img src="\${img}">
-        </div>
+    itemResumo: `
+        <div class="col-12 item-carrinho resumo">
+            <div class="img-produto-resumo">
+                <img src="\${img}">
+            </div>
 
-        <div class="dados-produto">
-            <p class="titulo-produto-resumo">
-                <b>\${name}</b>
+            <div class="dados-produto">
+                <p class="titulo-produto-resumo">
+                    <b>\${name}</b>
+                </p>
+
+                <p class="preço-produto-resumo">
+                    <b>R$ \${price}</b>
+                </p>
+            </div>
+
+            <p class="quantidade-produto-resumo">
+                x <b>\${quantia}</b>
             </p>
-
-            <p class="preço-produto-resumo">
-                <b>R$ \${price}</b>
-            </p>
         </div>
-
-        <p class="quantidade-produto-resumo">
-            x <b>\${quantia}</b>
-        </p>
-    </div>
-`
+    `
 
 }
