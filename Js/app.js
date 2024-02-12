@@ -402,13 +402,14 @@ cardapio.metodos = {
     //validação antes de prosseguir p etapa 3
     resumoPedido: () => {
 
-        let cep = $("txtCEP").val().trim();
-        let endereco = $("txtEndereco").val().trim();
-        let bairro = $("txtBairro").val().trim();
-        let cidade = $("txtCidade").val().trim();
-        let uf = $("ddlUf").val().trim();
-        let numero = $("txtNumero").val().trim();
-        let complemento = $("txtComplemento").val().trim();
+        let cep = $("#txtCEP").val().trim();
+        let endereco = $("#txtEndereco").val().trim();
+        let bairro = $("#txtBairro").val().trim();
+        let cidade = $("#txtCidade").val().trim();
+        let uf = $("#ddlUf").val().trim();
+        let numero = $("#txtNumero").val().trim();
+        let complemento = $("#txtComplemento").val().trim();
+        
 
         if(cep.length <= 0) {
             cardapio.metodos.mensagem('Informe o CEP, por favor.');
