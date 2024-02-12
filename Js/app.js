@@ -3,7 +3,11 @@ $(document).ready(function () {
 })
 
 var cardapio = {};
+
 var carrinho = [];
+
+var meuEndereco = null;
+
 var valorCarrinho = 0;
 var valorEntrega = 5;
 
@@ -392,6 +396,67 @@ cardapio.metodos = {
             cardapio.metodos.mensagem('Informe o CEP, por favor.');
             $("#txtCEP").focus();
         }
+
+    },
+
+    //validação antes de prosseguir p etapa 3
+    resumoPedido: () => {
+
+        let cep = $("txtCEP").val().trim();
+        let endereco = $("txtEndereco").val().trim();
+        let bairro = $("txtBairro").val().trim();
+        let cidade = $("txtCidade").val().trim();
+        let uf = $("ddlUf").val().trim();
+        let numero = $("txtNumero").val().trim();
+        let complemento = $("txtComplemento").val().trim();
+
+        if(cep.length <= 0) {
+            cardapio.metodos.mensagem('Informe o CEP, por favor.');
+            $("txtCEP").focus();
+            return;
+        }
+
+        if(endereco.length <= 0) {
+            cardapio.metodos.mensagem('Informe o Endereço, por favor.');
+            $("txtEndereco").focus();
+            return;
+        }
+        
+        if(bairro.length <= 0) {
+            cardapio.metodos.mensagem('Informe o Bairro, por favor.');
+            $("txtBairro").focus();
+            return;
+        }
+
+        if(cidade.length <= 0) {
+            cardapio.metodos.mensagem('Informe a Cidade, por favor.');
+            $("txtCidade").focus();
+            return;
+        }
+
+        if(uf == "-1") {
+            cardapio.metodos.mensagem('Informe a UF, por favor.');
+            $("ddlUf").focus();
+            return;
+        }
+
+        if(numero.length <= 0) {
+            cardapio.metodos.mensagem('Informe o Número, por favor.');
+            $("txtNumero").focus();
+            return;
+        }
+
+        meuEndereco = {
+            cep: cep,
+            endereco: endereco,
+            bairro: bairro,
+            cidade: cidade,
+            uf: uf,
+            numero: numero,
+            complemento: complemento
+        }
+
+        cardapio.metodos.carregarEtapa(3);
 
     },
 
