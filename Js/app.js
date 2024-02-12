@@ -259,19 +259,14 @@ cardapio.metodos = {
     diminuirQuantidadeCarrinho: (id) => {
 
         let quantiaAtual = parseInt($("#quantia-carrinho-" + id).text());
-        
-        console.log("ID:", id);
-        console.log("Quantidade Atual:", quantiaAtual);
-        
+
         if (quantiaAtual > 1) {
             $("#quantia-carrinho-" + id).text(quantiaAtual - 1);
             cardapio.metodos.atualizarCarrinho(id, quantiaAtual - 1);
-            console.log("Quantidade diminuída com sucesso!");
         } 
         else {
-            cardapio.metodos.removerItemCarrinho(id);
-            console.log("Removendo item do carrinho...");
-        }        
+            cardapio.metodos.removerItemCarrinho(id)
+        }
 
     },
 
@@ -358,7 +353,7 @@ cardapio.templates = {
             </div>
 
             <div class="add-carrinho">
-                <span class="btn-menos" onclick="cardapio.metodos.: ('\${id}')"><i class="fas fa-minus"></i></span>
+                <span class="btn-menos" onclick="cardapio.metodos.removerItemCarrinho: ('\${id}')"><i class="fas fa-minus"></i></span>
                 <span class="add-numero-itens" id="quantia-carrinho-\${id}">\${quantia}</span>
                 <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidadeCarrinho('\${id}')"><i class="fas fa-plus"></i></span>
                 <span class="btn btn-remove" onclick="cardapio.metodos.removerItemCarrinho"><i class="fa fa-times"></i></span>
