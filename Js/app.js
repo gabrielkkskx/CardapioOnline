@@ -559,7 +559,7 @@ cardapio.templates = {
 itemResumo: `
     <div class="col-12 item-carrinho resumo">
         <div class="img-produto-resumo">
-            <img src="\${img}" alt="">
+            <img src="\${img}">
         </div>
 
         <div class="dados-produto">
