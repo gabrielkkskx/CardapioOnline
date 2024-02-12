@@ -256,6 +256,7 @@ cardapio.metodos = {
 
     },
 
+    //diminui a quantia do item no carrinho
     diminuirQuantidadeCarrinho: (id) => {
 
         let quantiaAtual = parseInt($("#quantia-carrinho-" + id).text());
@@ -270,11 +271,23 @@ cardapio.metodos = {
 
     },
 
+    //aumenta a quantia de itens no carrinho
     aumentarQuantidadeCarrinho: (id) => {
+
+        let quantiaAtual = parseInt($("#quantia-carrinho-" + id).text());
+
+        $("#quantia-carrinho-" + id).text(quantiaAtual + 1);
+        cardapio.metodos.atualizarCarrinho(id, quantiaAtual + 1);
 
     },
 
+    //botao de remover item do carrinho
     removerItemCarrinho: (id) => {
+
+        carrinho = $.grep(carrinho, (e, i) => { return e.id != id });
+        cardapio.metodos.carregarCarrinho();
+
+        cardapio.metodos.atualizarBadgeTotal();
 
     },
 
