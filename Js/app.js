@@ -491,7 +491,7 @@ cardapio.metodos = {
         if(carrinho.length > 0 && meuEndereco != null) {
 
             var texto = 'Olá, gostaria de fazer um pedido:';
-            texto += `\n*Itens do pedido:*\n\n\${itens}`;    // '\n' quebra linha nas msg do zapzap
+            texto += `\n*Itens do pedido:*\n\n${itens}`;    // '\n' quebra linhas
             texto += '\n*Endereço de entrega:*';
             texto += `\n${meuEndereco.endereco}, ${meuEndereco.numero}, ${meuEndereco.bairro}`;
             texto += `\n${meuEndereco.cidade}-${meuEndereco.uf} / ${meuEndereco.cep} ${meuEndereco.complemento}`;
