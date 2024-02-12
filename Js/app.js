@@ -261,7 +261,7 @@ cardapio.metodos = {
         let quantiaAtual = parseInt($("#quantia-carrinho-" + id).text());
 
         if (quantiaAtual > 1) {
-            $("quantia-carrinho-" + id).text(quantiaAtual - 1);
+            $("#quantia-carrinho-" + id).text(quantiaAtual - 1);
             cardapio.metodos.atualizarCarrinho(id, quantiaAtual - 1);
         }
         else {
