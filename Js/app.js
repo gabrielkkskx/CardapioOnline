@@ -9,7 +9,7 @@ var carrinho = [];
 var meuEndereco = null;
 
 var valorCarrinho = 0;
-var valorEntrega = 5;
+var valorEntrega = 5; //se o estabelecimento colocar centavos tem q ser 5.5 = R$ 5,50
 
 var cllEmpresa = '5542991334898';
 
@@ -17,6 +17,7 @@ cardapio.eventos = {
 
     init: () => {
         cardapio.metodos.obterItensCardapio();
+        cardapio.metodos.carregarBtnLigar();
         cardapio.metodos.carregarReserva();
     }
 
@@ -526,6 +527,13 @@ cardapio.metodos = {
         let URL = `https://wa.me/${cllEmpresa}?text=${encode}`;
 
         $("#btnReserva").attr('href', URL);
+
+    },
+
+    //faz a ligação qdo aperta o btn ligar
+    carregarBtnLigar:() => {
+
+        $("btnLigar").attr('href', `tel:${cllEmpresa}`);
 
     },
     
