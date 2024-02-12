@@ -335,6 +335,17 @@ cardapio.metodos = {
 
     },
 
+    carregarEndereco: () => {
+
+        if (carrinho.length <= 0) {
+            cardapio.metodos.mensagem('Seu carrinho está vazio.')
+            return;
+        }
+
+        cardapio.metodos.carregarEtapa(2);
+
+    },
+
 
 
 
