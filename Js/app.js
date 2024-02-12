@@ -491,7 +491,7 @@ cardapio.metodos = {
         if(carrinho.length > 0 && meuEndereco != null) {
 
             var texto = 'Olá, gostaria de fazer um pedido:';
-            texto += `\n*Itens do pedido:*\n\n\${itens}`;    // '\n' quebra linhas
+            texto += `\n*Itens do pedido:*\n\n${itens}`;    // '\n' quebra linhas
             
             var itens = '';    
 
