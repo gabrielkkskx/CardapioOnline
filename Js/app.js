@@ -458,6 +458,25 @@ cardapio.metodos = {
         }
 
         cardapio.metodos.carregarEtapa(3);
+        cardapio.metodos.carregarResumo();
+
+    },
+
+    //carrega a etapa de resumo do pedido
+    carregarResumo: () => {
+
+        $("#listaItensResumo").html('');
+
+        $.each(carrinho, (i, e) => {
+
+            let temp = cardapio.templates.itemResumo.replace(/\${img}/g, e.img)
+            .replace(/\${name}/g, e.name)
+            .replace(/\${price}/g, e.price.toFixed(2).replace('.', ','))
+            .replace(/\${quantia}/g, e.quantia)
+
+            $("#listaItensResumo").append(temp);
+
+        })
 
     },
 
@@ -531,6 +550,28 @@ cardapio.templates = {
             <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidadeCarrinho('\${id}')"><i class="fas fa-plus"></i></span>
             <span class="btn btn-remove" onclick="cardapio.metodos.removerItemCarrinho('\${id}')"><i class="fa fa-times"></i></span>
         </div>
+    </div>
+`,
+
+itemResumo: `
+    <div class="col-12 item-carrinho resumo">
+        <div class="img-produto-resumo">
+            <img src="\${img}" alt="">
+        </div>
+
+        <div class="dados-produto">
+            <p class="titulo-produto-resumo">
+                <b>\${name}</b>
+            </p>
+
+            <p class="preço-produto-resumo">
+                <b>R$ \${price}</b>
+            </p>
+        </div>
+
+        <p class="quantidade-produto-resumo">
+            x <b>\${quantia}</b>
+        </p>
     </div>
 `
 
