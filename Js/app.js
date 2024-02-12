@@ -17,6 +17,7 @@ cardapio.eventos = {
 
     init: () => {
         cardapio.metodos.obterItensCardapio();
+        cardapio.metodos.carregarReserva();
     }
 
 }
@@ -515,6 +516,17 @@ cardapio.metodos = {
                 }
             });
         }
+    },
+
+    carregarReserva: () => {
+
+        var texto = 'Olá, gostaria de fazer uma reserva.';
+
+        let encode = encodeURI(texto);
+        let URL = `https://wa.me/${cllEmpresa}?text=${encode}`;
+
+        $("#btnResumo").attr('href', URL);
+
     },
     
 
