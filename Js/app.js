@@ -11,6 +11,8 @@ var meuEndereco = null;
 var valorCarrinho = 0;
 var valorEntrega = 5;
 
+var cllEmpresa = '5542991334898';
+
 cardapio.eventos = {
 
     init: () => {
@@ -501,10 +503,15 @@ cardapio.metodos = {
                     texto += `\n*Itens do pedido:*\n\n${itens}`;  // Use ${itens} diretamente
                     texto += '\n*Endereço de entrega:*';    // '\n' quebra linhas
                     texto += `\n${meuEndereco.endereco}, ${meuEndereco.numero}, ${meuEndereco.bairro}`;
-                    texto += `\n${meuEndereco.cidade}-${meuEndereco.uf} / ${meuEndereco.cep} \n ${meuEndereco.complemento}`;
+                    texto += `\n${meuEndereco.cidade}-${meuEndereco.uf} / ${meuEndereco.cep} \n${meuEndereco.complemento}`;
                     texto += `\n\n*Total (com entrega): R$ ${(valorCarrinho + valorEntrega).toFixed(2).replace('.', ',')}*`;
-    
-                    console.log(texto);
+
+                    //converte a url
+                    let encode = encodeURI(texto);
+                    let URL = `https://wa.me/${cllEmpresa}?text=${encode}`;
+
+                    $("#btnEtapaResumo").attr('href', URL);
+
                 }
             });
         }
