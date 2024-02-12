@@ -499,9 +499,9 @@ cardapio.metodos = {
                 //último item
                 if ((i + 1) == carrinho.length) {
                     texto += `\n*Itens do pedido:*\n\n${itens}`;  // Use ${itens} diretamente
-                    texto += '\n*Endereço de entrega:*';
+                    texto += '\n*Endereço de entrega:*';    // '\n' quebra linhas
                     texto += `\n${meuEndereco.endereco}, ${meuEndereco.numero}, ${meuEndereco.bairro}`;
-                    texto += `\n${meuEndereco.cidade}-${meuEndereco.uf} / ${meuEndereco.cep} ${meuEndereco.complemento}`;
+                    texto += `\n${meuEndereco.cidade}-${meuEndereco.uf} / ${meuEndereco.cep} \n ${meuEndereco.complemento}`;
                     texto += `\n\n*Total (com entrega): R$ ${(valorCarrinho + valorEntrega).toFixed(2).replace('.', ',')}*`;
     
                     console.log(texto);
