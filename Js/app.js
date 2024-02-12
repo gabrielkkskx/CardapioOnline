@@ -481,6 +481,42 @@ cardapio.metodos = {
         $("#resumoEndereco").html(`${meuEndereco.endereco}, ${meuEndereco.numero}, ${meuEndereco.bairro}`);
         $("#cidadeEndereco").html(`${meuEndereco.cidade}-${meuEndereco.uf} / ${meuEndereco.cep} ${meuEndereco.complemento}`);
 
+        cardapio.metodos.finalizarPedido();
+
+    },
+
+    //atualiza o link do btn do zap
+    finalizarPedido: () => {
+
+        if(carrinho.length > 0 && meuEndereco != null) {
+
+            var texto = 'Olá, gostaria de fazer um pedido:';
+            texto += `\n*Itens do pedido:*\n\n\${itens}`;    // '\n' quebra linha nas msg do zapzap
+            texto += '\n*Endereço de entrega:*';
+            texto += `\n${meuEndereco.endereco}, ${meuEndereco.numero}, ${meuEndereco.bairro}`;
+            texto += `\n${meuEndereco.cidade}-${meuEndereco.uf} / ${meuEndereco.cep} ${meuEndereco.complemento}`;
+
+            texto += `\n\n*Total (com entrega): R$ ${(valorCarrinho + valorEntrega).toFixed(2).replace('.', ',')}*`;
+
+            var itens = '';
+            
+            $.each(carrinho, (i, e) => {
+
+                itens += `*${e.quantia}x* ${e.name} ....... R$ ${e.price.toFixed(2).replace('.', ',')} \n`;
+
+                //último item
+                if((i + 1) == carrinho.length) {
+
+                    texto = texto.replace(/\$itens/g, itens);
+
+                    console.log(texto);
+
+                }
+
+            })
+
+        }
+
     },
 
 
