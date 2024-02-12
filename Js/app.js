@@ -525,7 +525,7 @@ cardapio.metodos = {
         let encode = encodeURI(texto);
         let URL = `https://wa.me/${cllEmpresa}?text=${encode}`;
 
-        $("#btnResumo").attr('href', URL);
+        $("#btnReserva").attr('href', URL);
 
     },
     
