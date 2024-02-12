@@ -263,9 +263,8 @@ cardapio.metodos = {
         if (quantiaAtual > 1) {
             $("#quantia-carrinho-" + id).text(quantiaAtual - 1);
             cardapio.metodos.atualizarCarrinho(id, quantiaAtual - 1);
-        }
-        else {
-            cardapio.metodos.removerItemCarrinho(id)
+        } else {
+            cardapio.metodos.removerItemCarrinho(id);
         }
 
     },
