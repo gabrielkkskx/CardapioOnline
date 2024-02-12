@@ -536,6 +536,22 @@ cardapio.metodos = {
         $("btnLigar").attr('href', `tel:${cllEmpresa}`);
 
     },
+
+    //abre depoimentos
+    abrirDepoimento:(depoimento) => {
+
+        $("#depoimento-1").addClass('hidden');
+        $("#depoimento-2").addClass('hidden');
+        $("#depoimento-3").addClass('hidden');
+
+        $("#btn-depoimento-1").removeClass('active');
+        $("#btn-depoimento-2").removeClass('active');
+        $("#btn-depoimento-3").removeClass('active');
+
+        $("#depoimento-" + depoimento).removeClass('hidden');
+        $("#btn-depoimento-" + depoimento).addClass('active');
+
+    },
     
 
 
