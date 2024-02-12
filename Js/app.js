@@ -476,7 +476,10 @@ cardapio.metodos = {
 
             $("#listaItensResumo").append(temp);
 
-        })
+        });
+
+        $("#resumoEndereco").html(`${meuEndereco.endereco}, ${meuEndereco.numero}, ${meuEndereco.bairro}`);
+        $("#cidadeEndereco").html(`${meuEndereco.cidade}-${meuEndereco.uf} / ${meuEndereco.cep} ${meuEndereco.complemento}`);
 
     },
 
