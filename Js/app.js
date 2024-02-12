@@ -4,6 +4,8 @@ $(document).ready(function () {
 
 var cardapio = {};
 var carrinho = [];
+var valorCarrinho = 0;
+var valorEntrega = 5;
 
 cardapio.eventos = {
 
@@ -247,11 +249,17 @@ cardapio.metodos = {
 
                 $("#itensCarrinho").append(temp);
 
+                //último item
+                if ((i + 1) == carrinho.length) {
+                    cardapio.metodos.carregarValores();
+                }
+
             })
 
         }
         else {
             $("#itensCarrinho").html('<p class="carrinho-vazio" ><i class="fa fa-shopping-bag"></i>Seu carrinho está vazio.</p>');
+            cardapio.metodos.carregarValores();
         }
 
     },
@@ -298,6 +306,32 @@ cardapio.metodos = {
         carrinho[objIndex].quantia = quantia;
 
         cardapio.metodos.atualizarBadgeTotal();
+
+        //atualiza os valores totais do carrinho
+        cardapio.metodos.carregarValores();
+
+    },
+
+    //carrega os valores de Subtotal, entrega e total
+    carregarValores: () => {
+
+        valorCarrinho = 0;
+
+        $("#lblSubTotal").text('R$ 0,00');
+        $("#lblValorEntrega").text('+ R$ 0,00');
+        $("#lblTotal").text('R$ 0,00');
+
+        $.each(carrinho, (i, e) => {
+
+            valorCarrinho += parseFloat(e.price * e.quantia);
+
+            if ((i + 1) == carrinho.length) {
+                $("#lblSubTotal").text(`R$ ${valorCarrinho.toFixed(2).replace('.', ',')}`);
+                $("#lblValorEntrega").text(`+ ${valorEntrega.toFixed(2).replace('.', ',')}`);
+                $("#lblTotal").text(`R$ ${(valorCarrinho + valorEntrega).toFixed(2).replace('.', ',')}`);
+            }
+
+        })
 
     },
 
