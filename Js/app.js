@@ -577,7 +577,7 @@ cardapio.metodos = {
 cardapio.templates = {
 
     item: `
-            <div class="col-3 mb-5 animated fadeInDown">
+            <div class="col-3 mb-5 animated fadeInDown delay-03s">
             <div class="card card-item" id="\${id}">
                 <div class="img-produto">
                     <img src="\${img}" />
