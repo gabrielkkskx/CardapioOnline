@@ -70,11 +70,25 @@
         padding-bottom: 50px;
     }
 
-    .container-menu {
-        overflow-x: auto; /* deixa a rolagem lateral */
+    .container-menu{
+        overflow-x: auto;  /* deixa a rolagem lateral */
         overflow-y: hidden;
         display: flex;
-        padding-bottom: 15px;
+        padding-bottom: 15px !important;
+    }
+
+    .container-menu::-webkit-scrollbar{
+        width: 6px;
+        background: transparent;
+    }
+    
+    .container-menu::-webkit-scrollbar-thumb{
+        background: transparent;
+        border-radius: 13px;
+    }
+    
+    .container-menu::-webkit-scrollbar-track{
+        background: transparent;
     }
 
     .img-produto{
