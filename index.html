@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/fontawesome.css">
     <link rel="stylesheet" href="./css/animate.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="./css/btn-teste.css">
+    <link rel="stylesheet" href="main.css">   
     <title>Cardápio</title>
 </head>
 <body>
@@ -62,17 +61,13 @@
 
                     </ul>
 
-                    <div class="button-container-1">
-                        <span class="mas"><i class="fa fa-shopping-bag"></i></span>
-                        <button class="btn btn-white btn-icon btn-carrinho" onclick="cardapio.metodos.abrirCarrinho(true)" type="button" name="Hover">
-                            Meu carrinho
-                            <span class="icon">
-                                <div class="container-total-carrinho badge-total-carrinho hidden">0</div>
-                                <i class="fa fa-shopping-bag"></i>
-                            </span>
-                        </button>
-                    </div>
-                    
+                    <a class="btn btn-white btn-icon" onclick="cardapio.metodos.abrirCarrinho(true)">
+                        Meu carrinho 
+                        <span class="icon">
+                            <div class="container-total-carrinho badge-total-carrinho hidden">0</div>
+                            <i class="fa fa-shopping-bag"></i>
+                        </span>
+                    </a>
 
                 </div>
             </nav>
