@@ -600,7 +600,7 @@ cardapio.templates = {
     `,
 
     itemCarrinho: `
-    <div class="col-12 item-carrinho">
+    <div class="col-12 item-carrinho animated fadeInUp delay-01s">
         <div class="img-produto">
             <img src="\${img}" alt="">
         </div>
