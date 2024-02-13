@@ -39,4 +39,23 @@
         font-size: 38px;
     }
 
+    .banner-texto p {
+        font-size: 18px;
+    }
+
+    .botao-amarelo, .btn-white{
+        padding: 13px 23px;
+        font-size: 18px;
+    }
+
+    .btn-icon-left span.icon-left{
+        width: 43px;
+        height: 43px;
+        margin-left: -56px;
+    }
+
+    .btn-icon-left{
+        padding-left: 63px !important;
+    }
+
 }
