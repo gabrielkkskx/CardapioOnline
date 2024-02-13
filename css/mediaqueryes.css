@@ -91,7 +91,33 @@
         background: transparent;
     }
 
+    .img-produto{
+        position: absolute;
+        left: 15px;
+    }
+
+    .card-item{
+        height: 110px;
+        padding-left: 110px;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .card-item .img-produto img{
+        width: 80px;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) and (max-width: 991px){
     .container-menu{
