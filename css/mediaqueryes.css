@@ -62,4 +62,33 @@
         font-size: 30px;
     }
 
+    .servicos{
+        padding-bottom: 50px;
+    }
+
+    .cardapio{
+        padding-bottom: 50px;
+    }
+
+    .container-menu{
+        overflow-x: auto;  /* deixa a rolagem lateral */
+        overflow-y: hidden;
+        display: flex;
+        padding-bottom: 15px;
+    }
+
+    .container-menu::-webkit-scrollbar{
+        width: 6px;
+        background: transparent;
+    }
+    
+    .container-menu::-webkit-scrollbar-thumb{
+        background: transparent;
+        border-radius: 13px;
+    }
+    
+    .container-menu::-webkit-scrollbar-track{
+        background: transparent;
+    }
+
 }
