@@ -573,7 +573,7 @@ cardapio.metodos = {
 
         setTimeout(() => {
             $("#msg-").removeClass('fadeInDown');
-            $("#msg-").addClass('fadeOutUp');
+            $("#msg-").addClass('fadeOutRight');
             setTimeout(() => {
                 $("#msg-" + id).remove();
             }, 800);
