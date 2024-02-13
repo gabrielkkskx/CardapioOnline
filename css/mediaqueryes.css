@@ -32,7 +32,11 @@
     }
 
     .banner{
-        padding: 50px 5px;
+        padding: 50px 0;
+    }
+
+    .banner-texto h1{
+        font-size: 38px;
     }
 
 }
