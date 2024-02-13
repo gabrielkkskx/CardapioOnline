@@ -566,19 +566,20 @@ cardapio.metodos = {
     mensagem: (texto, cor = 'red', tempo = 3500) => {
 
         let id = Math.floor(Date.now() * Math.random()).toString();
-
+    
         let msg = `<div id="msg-${id}" class="animated fadeInDown toast ${cor}">${texto}</div>`;
-        
+    
         $(".container-msg").append(msg);
-
+    
         setTimeout(() => {
-            $("#msg-").removeClass('fadeInDown');
-            $("#msg-").addClass('fadeOutRight');
+            $(`#msg-${id}`).removeClass('fadeInDown');
+            $(`#msg-${id}`).addClass('fadeOutRight');
             setTimeout(() => {
-                $("#msg-" + id).remove();
+                $(`#msg-${id}`).remove();
             }, 800);
-        }, tempo)
+        }, tempo);
     }
+    
 
 }
 
