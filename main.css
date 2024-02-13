@@ -46,6 +46,10 @@ b{
     font-family: 'PoppinsMedium', 'Rubik', sans-serif;
 }
 
+.btn-social{
+    width: 50px;
+}
+
 .laranja{
     color: var(--primaria);
 }
