@@ -13,6 +13,10 @@ a.navbar-brand{
     color: var(--card);
 }
 
+.btn-carrinho{
+    width: 243px;
+}
+
 .btn-white{
     background-color: var(--branco);
     color: var(--preto)!important;
