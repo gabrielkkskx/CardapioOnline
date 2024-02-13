@@ -129,19 +129,3 @@ b{
 .toast.green{
     background-color: var(--verde);
 }
-
-@keyframes pulseAnimation {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-
-  .infinite-pulse {
-    animation: pulseAnimation infinite;
-  }
