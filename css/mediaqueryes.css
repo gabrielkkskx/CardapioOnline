@@ -8,10 +8,12 @@
         padding: 0 35px !important;
     }
 
+    /* deixar a animação de fadeIn nos tópicos do menu no cll */
     .fadeInDown {
         -webkit-animation-name: fadeIn;
         animation-name: fadeIn;
-      }
+    }
+    /*  */
 
     .navbar-toggler-icon{
         padding-top: 5px;
@@ -146,6 +148,20 @@
     .card-secundario{
         padding: 46px;
         border-radius: 50px;
+    }
+
+    .container-logo-rodape{
+        justify-content: center;
+    }
+
+    .container-texto-rodape p{
+        text-align: center;
+    }
+
+    .container-social-rodape{
+        margin-top: 40px;
+        margin-bottom: 50px;
+        justify-content: center;
     }
 
 }
