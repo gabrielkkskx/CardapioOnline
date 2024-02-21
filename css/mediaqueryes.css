@@ -77,6 +77,7 @@
         padding-bottom: 15px !important;
     }
 
+    /* remove a scrollbar */
     .container-menu::-webkit-scrollbar{
         width: 6px;
         background: transparent;
@@ -90,6 +91,7 @@
     .container-menu::-webkit-scrollbar-track{
         background: transparent;
     }
+    /*  */
 
     .img-produto{
         position: absolute;
