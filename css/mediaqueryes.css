@@ -8,6 +8,11 @@
         padding: 0 35px !important;
     }
 
+    .fadeInDown {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+      }
+
     .navbar-toggler-icon{
         padding-top: 5px;
     }
