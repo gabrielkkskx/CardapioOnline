@@ -36,7 +36,6 @@
 }
 
 html, body{
-    max-width: 100%;
     scroll-behavior: smooth;
     background-color: var(--background);
     font-family: 'PoppinsRegular', 'Rubik', sans-serif;
