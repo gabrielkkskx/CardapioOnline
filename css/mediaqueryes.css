@@ -134,7 +134,14 @@
         padding-bottom: 50px;
     }
 
-    
+    .reservas{
+        padding-bottom: 50px;
+    }
+
+    .card-secundario{
+        padding: 46px;
+        border-radius: 50px;
+    }
 
 }
 
