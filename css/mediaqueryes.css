@@ -122,6 +122,20 @@
         font-size: 22px !important;
     }
 
+    .card-item .add-carrinho{
+        margin-top: 5px;
+    }
+
+    #itensCardapio .mb-5{
+        margin-bottom: 15px !important;
+    }
+
+    .depoimentos{
+        padding-bottom: 50px;
+    }
+
+    
+
 }
 
 
