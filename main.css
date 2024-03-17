@@ -60,6 +60,7 @@ b{
     text-align: center;
     padding: 7px;
     color: #FFF;
+    z-index: 9999;
   }
   
   .nick {
