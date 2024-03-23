@@ -203,7 +203,13 @@
 
 
 
+@media (max-width: 408px) {
 
+    .btn-voltar{
+        margin-top: 1rem !important;
+    }
+
+}
 
 
 
