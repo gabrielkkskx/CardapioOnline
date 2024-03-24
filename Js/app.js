@@ -416,37 +416,37 @@ cardapio.metodos = {
         
 
         if(cep.length <= 0) {
-            cardapio.metodos.mensagem('Informe o CEP, por favor.');
-            $("txtCEP").focus();
+            cardapio.metodos.mensagem('Informe o CEP');
+            $("txtCEP").focus(); //foca na caixa de txt do CEP
             return;
         }
 
         if(endereco.length <= 0) {
-            cardapio.metodos.mensagem('Informe o Endereço, por favor.');
+            cardapio.metodos.mensagem('Informe o Endereço');
             $("txtEndereco").focus();
             return;
         }
         
         if(bairro.length <= 0) {
-            cardapio.metodos.mensagem('Informe o Bairro, por favor.');
+            cardapio.metodos.mensagem('Informe o Bairro');
             $("txtBairro").focus();
             return;
         }
 
         if(cidade.length <= 0) {
-            cardapio.metodos.mensagem('Informe a Cidade, por favor.');
+            cardapio.metodos.mensagem('Informe a Cidade');
             $("txtCidade").focus();
             return;
         }
 
         if(uf == "-1") {
-            cardapio.metodos.mensagem('Informe a UF, por favor.');
+            cardapio.metodos.mensagem('Informe a UF');
             $("ddlUf").focus();
             return;
         }
 
         if(numero.length <= 0) {
-            cardapio.metodos.mensagem('Informe o Número, por favor.');
+            cardapio.metodos.mensagem('Informe o Número');
             $("txtNumero").focus();
             return;
         }
